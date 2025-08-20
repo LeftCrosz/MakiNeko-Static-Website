@@ -1,0 +1,56 @@
+.login_container {
+       left: 50%;
+       top: 50%;
+       position: absolute;
+       transform: translate(-50%, -50%);
+       text-align: center;
+       width: 400px;
+       padding: 20px;
+       border: 1px solid #ccc;
+       border-radius: 8px;
+       background-color: #f9f9f99c;
+}    
+     
+form {
+       justify-content: center;
+       align-items: center;
+       z-index: -1;
+}  
+    
+input[type=text], input[type=password] {   
+       width: 100%;   
+       margin: 8px 0;  
+       padding: 12px; 
+       display: inline-block;   
+       border: 2px solid rgb(155, 197, 155);
+       border-radius: 8px; 
+}
+
+
+button{
+       background-color: transparent;
+       color: black;
+       width: 100%;     
+       padding: 12px;
+       margin: 10px 0px;
+       transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+       align-items: center;
+       border-radius: 8px;
+       font-size: 20px;
+       border: 2px grey solid;
+       font-family: Poppins;
+       cursor: url('/images/cursor_cat_click.png') ,pointer;
+}
+   
+      
+button:hover {
+       color: #fff;
+       background-color: #1A1A1A;
+       box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+       transform: translateY(-2px);  
+}
+
+#forgotpass {
+       color: black;
+       text-decoration-line: none;
+}

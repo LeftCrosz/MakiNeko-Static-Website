@@ -1,0 +1,184 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Contact Us </title>  
+<link href="contact-us.css" rel="stylesheet">   
+<link href="style.css" rel="stylesheet">
+<link rel="icon" href="/images/maki_neko_logo.png">
+<script src="playmusic.js"></script>
+<style>
+body {  
+    font-family: Calibri, Helvetica, sans-serif;  
+    background: linear-gradient(270deg, rgba(162,249,250,0.60) 11%, rgba(64,201,230,0.5) 92%), url(images/contactus.jpg);
+    background-size: cover;
+}
+</style>
+</head>    
+<body>
+    
+    <header id="top" style="background-image: none; max-height: 100px;">
+    <nav class="nav-container">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+         <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <h1 class="logo"><a href="index.html">MAKI NEKO</a></h1>
+        <ul class="nav-item">
+            <li><a href="index.html">Home</a></li>
+            <li class="products"><a href="products.html">Products ↴</a>
+                <ul class="dropdown">
+                    <li><a href="poster.html">Poster</a></li>
+                    <li><a href="puzzle.html">Puzzle</a></li>
+                    <li><a href="photo.html">Photo</a></li>
+                    <li><a href="mousepad.html">Mousepad</a></li>
+                </ul>
+            </li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+        <ul class="login-register">
+            <li><a href="login.html">Login</a></li>
+            <li>|</li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="cart.html"><img src="images/shopping-bag.png" alt="Cart"></a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <h1 id="contact-us-title">Contact Us</h1>
+    <div class="info-container">
+        <div class="info-column">
+            <img src="/images/whatsapp.png" alt="phonelogo" width="40%">
+            <h2>Phone/Whatsapp</h2>
+            <br/>
+            <p>
+                <a href="tel:+0123456789">012-3456789</a>
+                <br/>
+                <a href="tel:+0123456789">012-3456789</a>
+            </p>
+        </div>
+
+        <div class="info-column">
+            <img src="/images/gmail.png" alt="emaillogo" width="40%">
+            <h2>Email</h2>
+            <br/>
+            <p><a href="mailto:makineko@gmail.com">makineko@gmail.com</a></p>
+        </div>
+
+        <div class="info-column">
+            <img src="/images/map.png" alt="locationlogo" width="40%">
+            <h2>Location</h2>
+            <br/>
+            <p><a href="https://www.google.com/maps/place/MakiNekoSdnBhd">Maki Neko Sdn Bhd, 53100 Kuala Lumpur, Federal Territory of Kuala Lumpur</a></p>
+        </div>
+    </div>
+    <div class="info-container">
+    <table>
+        <thead>
+            <td colspan="2">Business Hour</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td>8 am - 9 pm</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>8 am - 9 pm</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8 am - 10 pm</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>8 am - 9 pm</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>8 am - 9 pm</td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td>8 am - 6 pm</td>
+            </tr>
+            <tr>
+                <td>Sunday</td>
+                <td>-</td>
+            </tr>
+        </tbody>
+    </table>
+    </div> 
+
+    <h1 id="contact-us-title">Have any question?</h1>
+    <form>
+        <div class="contactus_container">  
+            <h1>Contact Us</h1> 
+            <hr>
+            <br/>
+            <label><b>Name</b></label>
+            <br/> 
+            <input type="text" name="username" id="username" placeholder="Enter your name" required />
+           
+            <label><b>Email</b></label>
+            <br/>  
+            <input type="email" name="email" id=""email placeholder="Enter your email" required/>
+            <br/><br/>
+
+            <label><b>Phone Number</b></label>
+            <br/>   
+            <input type="tel" name="phonenumber" id="phonenumber" placeholder="ex:nnn-nnnnnnn" required pattern="\(\d{3}-\d{7}\)" /> 
+            <br/><br/>
+
+            <label><b>Address</b></label>
+            <br/>   
+            <input type="text" name="address" id="address" placeholder="Enter your address" required />
+            <br/>
+
+            <label><b>Message</b></label>
+            <br/>
+            <textarea id="message" name="message" placeholder="Write something.."></textarea>
+            <button type="submit" class="submitbtn">Submit</button>   
+        </div>   
+    </form>
+    
+    <footer>
+        <div class="footer-logo"><p>MAKI NEKO</p>
+            <div class="neko_logo">
+                <img src="/images/maki_neko_logo_white.png" height="90px" width="90px"/>
+            </div>
+        </div>
+        <div class="column">
+            <ul class="product-links">
+              <p>Product Links</p>
+                <li><a href="mousepad.html">Mousepad</a></li>
+                <li><a href="puzzle.html">Puzzle</a></li>
+                <li><a href="poster.html">Poster</a></li>
+                <li><a href="photo.html">Photo</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="more-info">
+              <p>More information</p>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="termsofservice.html">Terms of Service</a></li>
+                <li><a href="return-policy.html">Return Policy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <div class="payment-icon">
+                <p>Payment Methods</p>
+                <img src="/home-images/payment-methods.png" alt="Payment Methods">
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Maki Neko, All Rights Reserved</p>
+    </footer>
+</body>     
+</html>  

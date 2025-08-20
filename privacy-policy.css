@@ -1,0 +1,47 @@
+#privacy-title {
+    text-align: center;
+    font-size: 38px;
+    font-family: Poppins;
+    font-weight: 700;
+    border-bottom: 1px solid rgb(117, 117, 117);
+}
+
+#privacy-title:hover {
+    content: "";
+    color: transparent;
+    background: linear-gradient(318deg, rgba(194,207,69,1) 0%, rgba(184,77,4,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    cursor: default;
+    transition: all 0.6s;
+}
+
+.privacy-container {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.privacy-content {
+    background: linear-gradient(270deg, rgba(241, 240, 225, 0.252) 26%, rgba(255, 255, 255, 0.415) 76%);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+    font-family: 'Poppins';
+    font-size: 1rem;
+    width: 820px;
+    margin: 20px;
+    padding: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.privacy-content dl dt {
+    font-weight: 700;
+}
+
+.privacy-content:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/maki_neko_logo.png">
+    <script src="playmusic.js"></script>
+    <style>
+        body {
+            background: linear-gradient(270deg, rgba(150, 217, 239, 0.6) 11%, rgba(210, 254, 165, 0.463) 92%), url('images/seriouscat.jpg');
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header id="top" style="background-image: none; max-height: 100px;">
+        <nav class="nav-container">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+             <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <h1 class="logo"><a href="index.html">MAKI NEKO</a></h1>
+            <ul class="nav-item">
+                <li><a href="index.html">Home</a></li>
+                <li class="products"><a href="products.html">Products ↴</a>
+                    <ul class="dropdown">
+                        <li><a href="poster.html">Poster</a></li>
+                        <li><a href="puzzle.html">Puzzle</a></li>
+                        <li><a href="photo.html">Photo</a></li>
+                        <li><a href="mousepad.html">Mousepad</a></li>
+                    </ul>
+                </li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+            <ul class="login-register">
+                <li><a href="login.html">Login</a></li>
+                <li>|</li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="cart.html"><img src="images/shopping-bag.png" alt="Cart"></a></li>
+            </ul>
+        </nav>
+        </header>
+
+        <div class="container">
+            <div class="cart">
+                <h1 class="header">Shopping Cart</h1><br/><br/><br/>
+                <div class="subheader">
+                    <div>Product</div>
+                    <div>Quantity</div>
+                    <div>Total Price(RM)</div>
+                </div>
+                <div id="cart-items">
+                    <div class="item-name">${item.name}</div>
+                    <div class="item-qtt"><input type="number" value="${item.quantity}" min="1"></div>
+                    <div class="item-total">${total.toFixed(2)}</div>
+                    <div class="item-remove"><button class="remove-button">x</button></div>
+                </div>
+            </div>
+    
+            <div class="summary">
+                <h1 class="header">Summary</h1><br/><br/><br/>
+                <div class="subtotal">
+                    Subtotal&nbsp;&ensp;: RM <span id="subtotal">0.00</span>
+                </div><br/>
+    
+                <div class="shipping-fee">
+                    Shipping&ensp;: RM 5.00
+                </div><br/>
+    
+                <div class="total">
+                    Total&emsp;&emsp;&nbsp;: RM<span id="total">0.00</span>
+                </div><br/><br/>
+    
+                <div class="button" style="text-align: right; margin-right: 10px;margin-bottom: 5px;">
+                <button id="checkout-button">Check Out</button>
+                </div>
+            </div>
+        </div>
+    
+    <script src="cart.js"></script>
+
+    <footer>
+        <div class="footer-logo"><p>MAKI NEKO</p>
+            <div class="neko_logo">
+                <img src="/images/maki_neko_logo_white.png" height="90px" width="90px"/>
+            </div>
+        </div>
+        <div class="column">
+            <ul class="product-links">
+              <p>Product Links</p>
+                <li><a href="mousepad.html">Mousepad</a></li>
+                <li><a href="puzzle.html">Puzzle</a></li>
+                <li><a href="poster.html">Poster</a></li>
+                <li><a href="photo.html">Photo</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="more-info">
+              <p>More information</p>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="termsofservice.html">Terms of Service</a></li>
+                <li><a href="return-policy.html">Return Policy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <div class="payment-icon">
+                <p>Payment Methods</p>
+                <img src="/home-images/payment-methods.png" alt="Payment Methods">
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Maki Neko, All Rights Reserved</p>
+    </footer>
+</body>
+</html>

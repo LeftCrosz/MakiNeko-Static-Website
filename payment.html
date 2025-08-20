@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/maki_neko_logo.png">
+    <script src="payment.js"></script>
+    <script src="paymentdone.js"></script>
+
+    <style>
+        body {
+            background: linear-gradient(270deg, rgba(187, 230, 255, 0.6) 11%, rgba(187, 244, 255, 0.8) 92%), url("/images/faq.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <header id="top" style="background-image: none; max-height: 100px;">
+        <nav class="nav-container">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+             <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <h1 class="logo"><a href="index.html">MAKI NEKO</a></h1>
+            <ul class="nav-item">
+                <li><a href="index.html">Home</a></li>
+                <li class="products"><a href="products.html">Products ↴</a>
+                    <ul class="dropdown">
+                        <li><a href="poster.html">Poster</a></li>
+                        <li><a href="puzzle.html">Puzzle</a></li>
+                        <li><a href="photo.html">Photo</a></li>
+                        <li><a href="mousepad.html">Mousepad</a></li>
+                    </ul>
+                </li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+            <ul class="login-register">
+                <li><a href="login.html">Login</a></li>
+                <li>|</li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="cart.html"><img src="images/shopping-bag.png" alt="Cart"></a></li>
+            </ul>
+        </nav>
+        </header>
+    <h1 class="payment-checkout">Checkout</h1>
+
+    <div class="split-container">
+        <div class="left-section">
+            <div class="info-field">
+                <form id="Info" name="information" method="post">
+                    <div class="secondheader">Customer Information</div>
+
+                    <div class="inputFieldsection">
+                        <input type="email" id="custEmail" name="custEmail" placeholder="Email* ex:xxx@gmail.com" autocomplete="off" autocapitalize="off" spellcheck="false" required/>
+
+                        <div class="consent" id="consentEmail">
+                            ● We will update the package information through email.<br/>
+                            Please make sure your email address is correct. 
+                        </div>
+
+                        <select id="typeTitles" name="typeTitles" required>
+                            <option value="Please_select" selected disabled>How to address you ?</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Mrs">Mrs</option>
+                        </select><br/><br/>
+                        
+                        <input type="text" id="custFirstName" name="custFirstName" placeholder="First Name*" autocomplete="off" autocapitalize="off" spellcheck="false" required/>
+
+                        <input type="text" id="custLastName" name="custLastName" placeholder="Last Name*" autocomplete="off" autocapitalize="off" spellcheck="false" required/><br/><br/>
+
+                        <input type="text" id="custPnum_areacode" name="custPnum_areacode" value="+60" autocomplete="off" readonly disabled/>
+
+                        <input type="tel" id="custPnumber" name="custPnumber" placeholder="Contact Number*" autocomplete="off" pattern="\d{9}" required/>
+
+                        <input type="text" id="custDelivery" name="custDelivery" value="Delivery Option: Shipping" readonly disabled/><br/>
+                            <div class="consent" id="consentPnumber">
+                                ● Without(-).
+                            </div><br/>
+                        
+                        <div class="secondheader">Shipping Address</div>
+
+                        <input type="text" id="custAddress" name="custAddress" placeholder="Address Line*" autocomplete="off" autocapitalize="off" required/><br/><br/>
+
+                        <input type="text" id="custAddress_post" name="custAddress_post" placeholder="Postcode*" oninput="validateInput(this)" pattern="\d{5}" required />
+
+                        <input type="text" id="custAddress_area" name="custAddress_area" placeholder="City*" required />
+
+                        <select id="custAddress_state" name="custAddress_state" >
+                            <option value="Please_select" selected disabled>State/Territory*</option>
+                            <option value="WP_Kuala_Lumpur">WP Kuala Lumpur</option>
+                            <option value="WP_Putrajaya">WP Putrajaya</option>
+                            <option value="WP_Labuan">WP Labuan</option>
+                            <option value="Johor">Johor</option>
+                            <option value="Kedah">Kedah</option>
+                            <option value="Kuantan">Kuantan</option>
+                            <option value="Melaka">Melaka</option>
+                            <option value="Negeri_Sembilan">Negeri Sembilan</option>
+                            <option value="Pahang">Pahang</option>
+                            <option value="Penang">Penang</option>
+                            <option value="Perak">Perak</option>
+                            <option value="Perlis">Perlis</option>
+                            <option value="Sabah">Sabah</option>
+                            <option value="Sarawak">Sarawak</option>
+                            <option value="Selangor">Selangor</option>
+                            <option value="Terengganu">Terengganu</option>
+                        </select><br/><br/><br/>
+                    </div>
+                    
+                    <div class="secondheader">Payment Info</div>
+                    <div class="payment-input">
+                        <input type="radio" id="creditcard" name="payby" value="CreditCard" checked>
+                        <label for="creditcard">
+                            Credit Card&nbsp;&nbsp;&nbsp;
+                            <img src="/payment-logo/mc_symbol.svg" alt="" width="50px" height="30px"><img src="/payment-logo/visa.png.png" alt="" width="50px" height="20px">
+                        </label>
+                        
+                        <div class="credit-card-fields" id="creditCardFields">
+                            <input type="text" id="CardNumber" name="CardNumber" placeholder="Card Number ex.16 Digits" pattern="\d{16}"><br/><br/>
+                            <input type="text" id="securityCode" name="securityCode" placeholder="3 Digits Security Code" pattern="\d{3}" oninput="ValidateInput(this)"><br/><br/>
+                            <input type="text" id="expiryDate" name="expiryDate" placeholder="Expiry Date (MM/YYYY)" pattern="\d{2}/\d{4}"><br/><br/>
+                        </div>
+
+                        <input type="radio" id="paypal" name="payby" value="PayPal">
+                        <label for="paypal">
+                            PayPal&nbsp;&nbsp;&nbsp;
+                            <img src="/payment-logo/PayPal_Logo_Hor.png" alt="" width="80px" height="20px">
+                        </label>
+                        <div class="paypal-fields" id="paypalFields">
+                            <p>After clicking "Pay", <br/>you will be redirected to PayPal to complete your purchase securely.</p>
+                        </div>
+
+                        <input type="radio" id="onlinebanking" name="payby" value="OnlineBanking">
+                        <label for="onlinebanking">
+                            Online Banking&nbsp;&nbsp;&nbsp;
+                            <img src="/payment-logo/FPX-Logo.png" alt=”” width="60px" height="20px">
+                        </label>
+                        <div class="paypal-fields">
+                            <div class="onlinebanking-fields" id="onlineBankingFields">
+                                <select id="bank" name="bank" >
+                                    <option value="Please_select" selected disabled>Select Your Bank</option>
+                                    <option value="Maybank2u">Maybank2u</option>
+                                    <option value="CIMB_Clicks">CIMB Clicks</option>
+                                    <option value="Public_Bank">Public Bank</option>
+                                    <option value="RHB_Now">RHB Now</option>
+                                    <option value="Ambank">Ambank</option>
+                                    <option value="MyBSN">MyBSN</option>
+                                    <option value="Bank_Rakyat">Bank Rakyat</option>
+                                    <option value="UOB">UOB</option>
+                                    <option value="Affin_Bank">Affin Bank</option>
+                                    <option value="Bank_Islam">Bank Islam</option>
+                                    <option value="HSBC_Online">HSBC Online</option>
+                                    <option value="Standard_Charted_Bank">Standard Charted Bank</option>
+                                    <option value="Kuwait_Finance_House">Kuwait Finance House</option>
+                                    <option value="Bank Muamalat">Bank_Muamalat</option>
+                                    <option value="OCBC_Online">OCBC Online</option>
+                                    <option value="Alliance_Bank">Alliance Bank(Personal)</option>
+                                    <option value="Hong Leong Connect">Hong_Leong_Connect</option>
+                                    <option value="Agrobank">Agrobank</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div><br/><br/>
+
+                    <div class="button" style="text-align: right; margin-bottom: -20px;">
+                        <button type="submit" value="Pay" id="pay-button" onclick="paymentdone()">Pay</button><br/><br/>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer>
+        <div class="footer-logo"><p>MAKI NEKO</p>
+            <div class="neko_logo">
+                <img src="/images/maki_neko_logo_white.png" height="80px" width="80px"/>
+            </div>
+        </div>
+        <div class="column">
+            <ul class="product-links">
+              <p>Product Links</p>
+                <li><a href="mousepad.html">Mousepad</a></li>
+                <li><a href="puzzle.html">Puzzle</a></li>
+                <li><a href="poster.html">Poster</a></li>
+                <li><a href="photo.html">Photo</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul class="more-info">
+              <p>More information</p>
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                <li><a href="termsofservice.html">Terms of Service</a></li>
+                <li><a href="return-policy.html">Return Policy</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <div class="payment-icon">
+                <p>Payment Methods</p>
+                <img src="/home-images/payment-methods.png" alt="Payment Methods">
+            </div>
+        </div>
+        <p class="copyright">Copyright © 2023 Maki Neko, All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+

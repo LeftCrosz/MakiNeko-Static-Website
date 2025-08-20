@@ -1,0 +1,138 @@
+@font-face {
+    font-family: Poppins;
+    src:
+       url(Poppins-Bold.ttf),
+       url(Poppins-Regular.ttf),
+       url(Poppins-ExtraBold.ttf),
+       url(Poppins-SemiBold.ttf);
+}
+
+.title{
+    text-align: center;
+    font-size: 40px;
+    color: black;
+    padding-bottom: 50px;
+    padding-top: 0;
+    font-family: 'Poppins';
+}
+
+
+
+.container {
+    background: linear-gradient(270deg, rgba(193, 233, 248, 0.768) 26%, rgba(224, 248, 255, 0.63) 76%);
+    text-align: left;
+    padding: 30px;  
+    border-radius: 20px;
+    max-width: 80%;
+    grid-row-gap: 40px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-right: none;
+    margin-bottom: 70px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.question{
+    color: rgb(69,69,69);
+}
+.answers{
+    color: rgb(4, 127, 180);
+}
+
+.main-section {
+    font-family: 'Poppins';
+    float: left;
+    width: 70%;
+}
+
+aside {
+    float: right; 
+    width: 30%;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr); 
+    gap: 30px; 
+    margin-top: 20px; 
+    margin-right: 70px;
+    max-width: 500px;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    font-family: 'Poppins';
+    background: linear-gradient(270deg, rgba(247, 253, 255, 0.852) 26%, rgba(218, 240, 237, 0.54) 76%);
+    padding: 20px; 
+    text-align: center; 
+    text-decoration: none; 
+    color: black; 
+    border-radius: 30px; 
+    transition: all 250ms; 
+}
+
+.faq-item:hover {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(-1px);
+}
+
+.faq-item:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+
+.faq-item h1 {
+    font-size: 20px; 
+    margin-bottom: 10px; 
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px; 
+}
+
+.faq-item-question {
+    color: rgb(69, 69, 69);
+    padding: 30px;
+    font-size: 13pt;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 10px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 960px) {
+    .main-section {
+        width: 100%; 
+        float: none; 
+    }
+
+    aside {
+        width: 100%; 
+        float: none; 
+        margin-top: 20px; 
+    }
+
+    .faq-grid {
+        max-width: 100%; 
+        gap: 0; 
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+        float: none;
+    }
+
+    .faq-item {
+        border-radius: 0; 
+    }
+}

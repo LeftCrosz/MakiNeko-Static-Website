@@ -1,0 +1,84 @@
+#testi-title {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Poppins';
+}
+
+.testi-container {
+    font-family: 'Bangers', cursive;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testi-container .testi-item {
+    border-radius: 8px;
+    width: 400px;
+    height: 150px;
+    padding: 10px;
+    margin: 20px;
+    transition: all 0.5s;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.899) 26%, rgba(255, 255, 255, 0.581) 76%);
+}
+
+.testi-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 4px 12px;
+}
+
+.testi-item h3::before {
+    content: '\201C';
+    font-size: 30px;
+    color: rgb(0, 64, 255);
+}
+
+.testi-item h3::after {
+    content: '\201D';
+    font-size: 30px;
+    color: rgb(0, 102, 255);
+}
+
+.extra-footer {
+    margin: 80px 0 0 0;
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.388) 26%, rgba(218, 250, 255, 0.316) 76%);
+    backdrop-filter: blur(8px);
+}
+
+.extra-footer a {
+    text-decoration: none;
+    border: 1px solid black;
+    color: rgb(69, 69, 69);
+    background: white;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+    
+.extra-footer a:hover {
+    color: rgb(126, 126, 126);
+    background-color: rgb(231, 249, 255);
+    text-shadow: 2px 2px hsla(0, 0%, 0%, 0.15);
+}
+
+@media (max-width: 768px) {
+    .testi-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .extra-footer h1#testi-extra-title {
+        font-size: 18px;
+    }
+    .extra-footer a {
+        font-size: 12px;
+        height: 10px;
+        width: 20px;
+        padding: 5px 15px;
+        margin-top: 10px;
+    }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maki Neko</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/maki_neko_logo.png">
+    <script src="playmusic.js"></script>
+</head>
+<body>
+    <header id="top">
+    <nav class="nav-container">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-btn">
+         <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <h1 class="logo"><a href="index.html">MAKI NEKO</a></h1>
+        <ul class="nav-item">
+            <li><a href="index.html">Home</a></li>
+            <li class="products"><a href="products.html">Products ↴</a>
+                <ul class="dropdown">
+                    <li><a href="poster.html">Poster</a></li>
+                    <li><a href="puzzle.html">Puzzle</a></li>
+                    <li><a href="photo.html">Photo</a></li>
+                    <li><a href="mousepad.html">Mousepad</a></li>
+                </ul>
+            </li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+        <ul class="login-register">
+            <li><a href="login.html">Login</a></li>
+            <li>|</li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="cart.html"><img src="images/shopping-bag.png" alt="Cart"></a></li>
+        </ul>
+    </nav>
+    
+    <div class="hero">
+        <div class="hero-content">
+            <h1 id="hero-text">WELCOME TO<br/>MAKI NEKO</h1>
+            <h2 id="hero-text2">A Collection of Nekos Products</h2>
+            <div class="shopnow-link">
+                <a href="/products.html">
+                    <img src="/images/maki_neko_logo.png" height="30px" width="30px" />
+                    <span class="meow">MEOW~ </span>
+                    <span class="shopnow">SHOP NOW</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    </header>
+    <div class="product-categories-imagemap">
+        <h1>Product Categories</h1>
+        <img src="home-images/product-categories.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="Poster" title="Poster" href="poster.html" coords="244,23,64,258" shape="rect">
+            <area target="" alt="Puzzle" title="Puzzle" href="puzzle.html" coords="297,46,494,245" shape="rect">
+            <area target="" alt="Photo" title="Photo" href="photo.html" coords="544,46,756,248" shape="rect">
+            <area target="" alt="Mousepad" title="Mousepad" href="mousepad.html" coords="803,53,1031,239" shape="rect">
+        </map>
+    </div>
+    
+    <div class="product-categories-imagemap-responsive">
+        <h1>Product Categories</h1>
+        <img src="home-images/product-categories-responsive.png" usemap="#image-map-responsive">
+
+        <map name="image-map-responsive">
+            <area target="" alt="Poster" title="Poster" href="poster.html" coords="51,50,232,285" shape="rect">
+            <area target="" alt="Puzzle" title="Puzzle" href="puzzle.html" coords="42,342,241,541" shape="rect">
+            <area target="" alt="Photo" title="Photo" href="photo.html" coords="35,581,247,781" shape="rect">
+            <area target="" alt="Mousepad" title="Mousepad" href="mousepad.html" coords="29,838,252,1024" shape="rect">
+        </map>
+    </div>
+
+    <div class="best-selling">
+        <h1>Best Selling</h1>
+    </div>
+    <div class="product-list">
+        <div class="product-container">
+            <img src="/product-images/mousepad-festivalneko.png" alt="Product 1" class="product-image">
+            <div class="product-details">
+                <div class="product-name">Festival Neko</div>
+                <div class="product-price">RM39.99</div>
+            </div>
+            <a href="all-products/mousepad-festivalneko.html" class="buy-button">View Product</a>
+        </div>
+
+        <div class="product-container">
+            <img src="/product-images/poster-thenekos.png" alt="Product 2" class="product-image">
+            <div class="product-details">
+                <div class="product-name">The Nekos</div>
+                <div class="product-price">RM19.99</div>
+            </div>
+            <a href="all-products/poster-thenekos.html" class="buy-button">View Product</a>
+        </div>
+
+        <div class="product-container">
+            <img src="/product-images/puzzle-autumneko.png" alt="Autumn Neko" class="product-image">
+            <div class="product-details">
+                <div class="product-name">Autumn Neko</div>
+                <div class="product-price">RM29.99</div>
+            </div>
+            <a href="all-products/puzzle-autumnneko.html" class="buy-button">View Product</a>
+        </div>
+
+        <div class="product-container">
+            <img src="product-images/photo-strawberry.jpg" alt="Strawberry Neko" class="product-image">
+            <div class="product-details">
+                <div class="product-name">Strawberry Neko</div>
+                <div class="product-price">RM19.99</div>
+            </div>
+            <a href="all-products/photo-strawberry.html" class="buy-button">View Product</a>
+        </div>
+    </div>
+
+    <div class="why-us">
+            <h1>Why Choose Us?</h1>
+            <div class="feature">
+                <div class="icon"><img src="/home-images/quality.png" alt="Quality"></div>
+                <div class="title">High Quality</div>
+                <div class="description">We deliver products of the highest quality to meet your needs.</div>
+            </div>
+    
+            <div class="feature">
+                <div class="icon"><img src="/home-images/payment.png" alt="Secured"></div>
+                <div class="title">Secured Payment</div>
+                <div class="description">Your payments are secured by the website.</div>
+            </div>
+    
+            <div class="feature">
+                <div class="icon"><img src="/home-images/support.png" alt="Support"></div>
+                <div class="title">24/7 Support</div>
+                <div class="description">Our dedicated support will always assist you.</div>
+            </div>
+    </div>
+
+    <div class="home-faq-container">
+        <h1>Most Asked Questions</h1>
+        <div class="home-faq-item">
+            <h2>Question 1: Is the printing quality good?</h2>
+            <p>Answer: Yes. The printing quality is really good and the painting is water resistance and dust resistance.</p>
+        </div>
+        <div class="home-faq-item">
+            <h2>Question 2: What should I do if there is payment error?</h2>
+            <p>Answer: You can contact us through email or live chat.</p>
+        </div>
+        <div class="home-faq-item">
+            <h2>Question 3: What payment methods can I use to pay?</h2>
+            <p>Answer: We accept PayPal, debit or credit card, Visa, Bank Transfer, Touch 'n Go Ewallet and GrabPay. If you want to use other payment methods, you can contact us.</p>
+        </div>
+    </div>
+    
+    <div class="introduction">
+        <video width="480" height="auto" controls>
+            <source src="introduction.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <footer>
+      <div class="footer-logo"><p>MAKI NEKO</p>
+        <div class="neko_logo">
+            <img src="/images/maki_neko_logo_white.png" height="80px" width="80px"/>
+        </div>
+      </div>
+      <div class="column">
+          <ul class="product-links">
+            <p>Product Links</p>
+              <li><a href="mousepad.html">Mousepad</a></li>
+              <li><a href="puzzle.html">Puzzle</a></li>
+              <li><a href="poster.html">Poster</a></li>
+              <li><a href="photo.html">Photo</a></li>
+          </ul>
+      </div>
+      <div class="column">
+          <ul class="more-info">
+            <p>More information</p>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="termsofservice.html">Terms of Service</a></li>
+              <li><a href="return-policy.html">Return Policy</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+          </ul>
+      </div>
+      <div class="column">
+          <div class="payment-icon">
+              <p>Payment Methods</p>
+              <img src="/home-images/payment-methods.png" alt="Payment Methods">
+          </div>
+      </div>
+      <p class="copyright">Copyright © 2023 Maki Neko, All Rights Reserved</p>
+  </footer>
+</body>
+</html>

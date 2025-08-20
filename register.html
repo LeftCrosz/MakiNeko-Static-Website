@@ -1,0 +1,150 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register</title>
+<link href="style.css" rel="stylesheet">
+<link rel="stylesheet" href="register.css">
+<link rel="icon" href="/images/maki_neko_logo.png">
+<script src="playmusic.js"></script>
+
+<style>
+body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: beige; 
+  background: linear-gradient(270deg, rgba(233, 227, 177, 0.23) 11%, rgba(151, 186, 164, 0.904) 92%), url(images/register.jpg);
+  background-size: cover;
+}
+
+footer {
+  margin-top: 450px;
+}
+</style>
+</head>  
+<body>
+    <header id="top" style="background-image: none;">
+        <nav class="nav-container">
+            <input type="checkbox" id="nav-check">
+            <div class="nav-btn">
+             <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            <h1 class="logo"><a href="index.html">MAKI NEKO</a></h1>
+            <ul class="nav-item">
+                <li><a href="index.html">Home</a></li>
+                <li class="products"><a href="products.html">Products ↴</a>
+                    <ul class="dropdown">
+                      <li><a href="poster.html">Poster</a></li>
+                      <li><a href="puzzle.html">Puzzle</a></li>
+                      <li><a href="photo.html">Photo</a></li>
+                      <li><a href="mousepad.html">Mousepad</a></li>
+                    </ul>
+                </li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+            </ul>
+            <ul class="login-register">
+                <li><a href="login.html">Login</a></li>
+                <li>|</li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="cart.html"><img src="images/shopping-bag.png" alt="Cart"></a></li>
+            </ul>
+        </nav>
+    </header>
+  <div class="register_container">
+    <h1>Register</h1>
+    <br/>
+    <form>
+        <hr>
+        <br/> 
+        <label><b>Username</b></label>
+        <br/>
+        <input type="text" name="username" id="username" placeholder= "Username"  required />
+        <br/>
+    
+        <label for="email"><b>Email</b></label>
+        <br/> 
+        <input type="email" name="email" id="email" placeholder="ex:xxxx@gmail.com"  required />
+        <br/><br/>  
+
+        <label><b>Gender</b></label>
+        <br/>
+        <input type="radio" name="gender" id="genderM" checked />
+        <label for="genderM">Male</label> 
+        <input type="radio" name="gender" id="genderF" />
+        <label for="genderF">Female</label> 
+        <br/><br/>  
+
+        <label for="phone"><b>Phone</b></label>
+        <br/> 
+        <input type="tel" name="phone" id="phone" placeholder="ex:nnnnnnnnnn" required pattern="\d{10}" />     
+        <br/><br/>
+
+        <label for="password"><b>Password</b></label>
+        <br/> 
+        <input type="password" name="password" id="password" placeholder="Enter Password" required>
+        <br/> 
+  
+        <label for="confirmpassword"><b>Confirm Password</b></label>
+        <br/>
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm Password" required>  
+
+        <button type="submit" class="registerbtn">Register</button>
+      </form>
+  </div>
+
+<script>
+var password = document.getElementById("password")
+  , confirmpassword = document.getElementById("confirmpassword");
+
+function validatePassword(){
+  if(password.value != confirmpassword.value) {
+    confirmpassword.setCustomValidity("Passwords Don't Match");
+  } else {
+    confirmpassword.setCustomValidity('');
+  }
+}
+
+password.onchange = validatePassword;
+confirmpassword.onkeyup = validatePassword;
+</script>
+
+  <footer>
+    <div class="footer-logo"><p>MAKI NEKO</p>
+      <div class="neko_logo">
+          <img src="/images/maki_neko_logo_white.png" height="80px" width="80px"/>
+      </div>
+  </div>
+    <div class="column">
+        <ul class="product-links">
+          <p>Product Links</p>
+            <li><a href="mousepad.html">Mousepad</a></li>
+            <li><a href="puzzle.html">Puzzle</a></li>
+            <li><a href="poster.html">Poster</a></li>
+            <li><a href="photo.html">Photo</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <ul class="more-info">
+          <p>More information</p>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="termsofservice.html">Terms of Service</a></li>
+            <li><a href="return-policy.html">Return Policy</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+    </div>
+    <div class="column">
+        <div class="payment-icon">
+            <p>Payment Methods</p>
+            <img src="/home-images/payment-methods.png" alt="Payment Methods">
+        </div>
+    </div>
+    <p class="copyright">Copyright © 2023 Maki Neko, All Rights Reserved</p>
+</footer>
+
+</body>  
+</html>  
