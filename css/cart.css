@@ -48,7 +48,7 @@ input[type="number"] {
     border-radius: 5px;
     border: 2px solid grey;
     background-color: #f9f9f97e;
-    cursor: url('/images/cursor_cat_click.png') ,pointer;
+    cursor: url('../images/cursor_cat_click.png') ,pointer;
 }
 
 #cart-items input:hover {
@@ -59,7 +59,7 @@ input[type="number"] {
     background-color: transparent;
     font-size: 20px;
     border-color: transparent;
-    cursor: url('/images/cursor_cat_click.png') ,pointer;
+    cursor: url('../images/cursor_cat_click.png') ,pointer;
 }
 
 .remove-button:hover {
@@ -105,7 +105,7 @@ button#checkout-button{
     user-select: none;
     will-change: transform;
     align-items: center;
-    cursor: url('/images/cursor_cat_click.png') ,pointer;
+    cursor: url('../images/cursor_cat_click.png') ,pointer;
     border-radius: 5px;
     font-size: 20px;
     border: 2px grey solid;
